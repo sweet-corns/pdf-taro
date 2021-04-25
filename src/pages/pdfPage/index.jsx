@@ -27,9 +27,7 @@ function PDFPage() {
   })
 
   return (
-    <View>
-      <View className='PdfCss' id="Pdf"></View>
-    </View>
+    <View className='PdfCss' id="Pdf"></View>
   )
 }
 export default PDFPage
