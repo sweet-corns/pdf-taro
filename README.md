@@ -44,7 +44,6 @@ try {
   // Do something when catch error
 }
 
-
 <View className='PdfCss' id="Pdf"></View>
 </code></pre>
 
