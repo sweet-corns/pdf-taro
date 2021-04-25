@@ -1,11 +1,9 @@
 # 在线预览PDF
-用Taro3 React开发的demo
+用Taro3 React开发的demo地址： <https://github.com/sweet-corns/pdf-taro>
 
-支持H5端、小程序端在线预览pdf
+支持：H5端、小程序端在线预览pdf,适配安卓、ios。
 
-适配安卓、ios
-
-yarn global add @tarojs/cli3.2.5
+当前Taro版本：yarn global add @tarojs/cli3.2.5
 
 # 更新说明
 1、v1.0.0  完成H5端、微信端在线预览PDF。
@@ -44,7 +42,7 @@ try {
   // Do something when catch error
 }
 
-<View className='PdfCss' id="Pdf"></View>
+`<View className='PdfCss' id="Pdf"></View>`
 </code></pre>
 
 
