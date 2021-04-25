@@ -6,7 +6,7 @@
 当前Taro版本：yarn global add @tarojs/cli3.2.5
 
 # 更新说明
-1、v1.0.0  完成H5端、微信端在线预览PDF。
+1、v1.0.0  完成H5端、微信小程序端在线预览PDF。
 
 # 学习资料
 1、Taro: 一个开放式跨端跨框架解决方案 <https://taro.aotu.io/>
@@ -42,7 +42,7 @@ try {
   // Do something when catch error
 }
 
-`<View className='PdfCss' id="Pdf"></View>`
+<View className='PdfCss' id="Pdf"></View>
 </code></pre>
 
 
