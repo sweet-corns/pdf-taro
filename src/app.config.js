@@ -1,6 +1,7 @@
 export default {
   pages: [
-    'pages/index/index'
+    'pages/index/index',
+    'pages/pdfPage/index'
   ],
   window: {
     backgroundTextStyle: 'light',

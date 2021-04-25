@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Button, View } from '@tarojs/components'
 import { Loading } from '../../components/loading'
 
@@ -10,6 +10,7 @@ function Index() {
 
   useAsyncEffect(async () => {
     try {
+      // 请求数据在这里
       setLoading(false)
     } catch (error) {
       setLoading(true)
@@ -17,10 +18,12 @@ function Index() {
   }, [])
 
   const gotoPDF = () => {
-    console.log('去看PDF')
-    if(process.env.TARO_ENV === 'h5'){
-      console.log('h5')
-    }else if(process.env.TARO_ENV === 'weapp'){
+    if (process.env.TARO_ENV === 'h5') {
+      Taro.setStorageSync('pdfUrl', 'https://static.zje.com/1619076422102_.pdf')
+      Taro.navigateTo({
+        url: '/pages/pdfPage/index',
+      })
+    } else if (process.env.TARO_ENV === 'weapp') {
       Taro.downloadFile({
         url: 'https://static.zje.com/1619076422102_.pdf',
         success: function (res) {
