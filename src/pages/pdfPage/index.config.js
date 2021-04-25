@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '入住通知书'
+  navigationBarTitleText: '在线预览PDF'
 }
